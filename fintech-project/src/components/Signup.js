@@ -121,7 +121,7 @@ const SignUpSignIn = () => {
                 <input
 
                   type="email"
-                  placeholder="JohnDoe@gmail.com"
+                  placeholder="Enter Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -131,7 +131,7 @@ const SignUpSignIn = () => {
                 <p>Password</p>
                 <input
                   type="password"
-                  placeholder="Example123"
+                  placeholder="Enter Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -173,18 +173,13 @@ const SignUpSignIn = () => {
             <form onSubmit={signUpWithEmail}>
               <div className="input-wrapper">
                 <p>Full Name</p>
-                <input
-                  type="text"
-                  placeholder="John Doe"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
+                <input type="text" placeholder="Enter Your Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
               </div>
               <div className="input-wrapper">
                 <p>Email</p>
                 <input
                   type="email"
-                  placeholder="JohnDoe@gmail.com"
+                  placeholder="Enter Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -192,9 +187,7 @@ const SignUpSignIn = () => {
 
               <div className="input-wrapper">
                 <p>Password</p>
-                <input
-                  type="password"
-                  placeholder="Example123"
+                <input type="password" placeholder="Enter Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -204,7 +197,7 @@ const SignUpSignIn = () => {
                 <p>Confirm Password</p>
                 <input
                   type="password"
-                  placeholder="Example123"
+                  placeholder="Confirm Password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
@@ -214,6 +207,8 @@ const SignUpSignIn = () => {
                 {loading ? "Loading..." : "Sign Up with Email and Password"}
               </button>
             </form>
+
+
             <p style={{ textAlign: "center", margin: 0 }}>or</p>
             <button
               disabled={loading}
